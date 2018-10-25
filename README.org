@@ -1,0 +1,25 @@
+* LISP-OS
+
+A simple Scheme-like Lisp interpreter that can also be run as a simple self-contained operating system.
+
+** Scheme-like semantics
+
+** Move and Copy garbage collector
+
+** User space
+
+** Lisp Macro System
+
+** First class data types: (signed fixed precision) integer, double, arrays, hash tables, symbols, strings, procedures and closures (lambda expressions).
+
+* Usage
+
+** OS Starts into a REPL. (quit) exits
+
+** Write procesures using (define (proc args...) body). Note that this is equivalent to (define proc (lambda (args...) body))
+
+** Define macros using (defmacro (mac args...) body)
+
+** Use (toplevel) to inspect toplevel defined symbols
+
+** Memory management is split into the heap, that manages all dynamic objects (cons cells, strings etc)
